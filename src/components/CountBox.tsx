@@ -1,0 +1,19 @@
+interface CountBoxProps{
+    title?:string;
+    value?:string;
+}
+
+const CountBox = (props:CountBoxProps) => {
+    return (
+        <div className="flex flex-col items-center w-[150px]">
+            <h4 className="font-epilogue font-bold text-white text-[30px] p-3 bg-[#1c1c24] rounded-t-[10px] w-full text-center truncate">
+                {props.value}
+            </h4>
+            <p className="font font-epilogue font-normal text-[16px] text-[#808191] bg-[#28282e] px-3 py-2 w-full rounded-b-[10px] text-center truncate">
+                {props.title}
+            </p>
+        </div>
+    )
+}
+
+export default CountBox
